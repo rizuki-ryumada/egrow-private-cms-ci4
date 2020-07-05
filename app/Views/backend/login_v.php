@@ -23,23 +23,23 @@
 <body class="hold-transition login-page">
     <div class="wrapper w-100">
         <div class="container-fluid h-100">
-            <div class="row justify-content-end h-100">
+            <div class="row justify-content-center h-100">
                 <div class="col-md-4 d-flex justify-content-center align-self-center">
                     <div class="login-box">
                         <div class="login-logo">
-                            <a href="../../index2.html"><img src="assets/img/_main/egrow_text_logo_stroked.svg" alt="Egrow Private"></a>
+                            <a href="../../index2.html"><img src="assets/img/_main/egrow_text_logo.svg" alt="Egrow Private"></a>
                         </div>
                         <!-- /.login-logo -->
                         <div class="card">
                             <div class="card-body login-card-body">
                                 <p class="login-box-msg">Sign in to manage your site.</p>
                                 
-                                <form action="../../index3.html" method="post">
+                                <form action="<?= base_url('login/logmein'); ?>" method="post">
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="username" class="form-control" placeholder="Username">
                                         <div class="input-group-append">
                                             <div class="input-group-text">
-                                                <span class="fas fa-envelope"></span>
+                                                <span class="fas fa-user"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -53,12 +53,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-8">
-                                            <div class="icheck-primary">
+                                            <!-- <div class="icheck-primary">
                                                 <input type="checkbox" id="remember">
                                                 <label for="remember">
                                                     Remember Me
                                                 </label>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <!-- /.col -->
                                         <div class="col-4">
@@ -69,9 +69,8 @@
                                 </form>
                                 
                                 <hr>
-                                <small class="text-center">
-                                    created by <pre class="text-center">garasijogi</pre>
-                                </small>
+                                <p class="text-center mb-0"><small><strong>&copy; <?= date('Y'); ?> <a href="">Egrow Private</a>.</strong> All rights reserved.</small>
+                                </p>
                                 <!-- <p class="mb-1">
                                     <a href="forgot-password.html">I forgot my password</a>
                                 </p> -->
