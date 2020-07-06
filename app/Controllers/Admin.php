@@ -3,8 +3,9 @@ namespace App\Controllers;
 
 // use CodeIgniter\Controller;
 
-class Admin extends BaseController{
+class Admin extends _backend{
     public function index(){
+        
         return view('backend/login_v');
     }
 

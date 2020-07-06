@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-<!-- HEAD -->
-<!-- icon -->
-<link rel="stylesheet" href="<?= base_url('assets/vendor/node_modules/@fortawesome/fontawesome-free/css/all.min.css'); ?>">
-
-<!-- plugins -->
-<link rel="stylesheet" href="<?= base_url('assets/vendor/node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
-
-<!-- admin lte FRAMEWORK STYLES -->
-<link rel="stylesheet" href="<?= base_url('assets/vendor/node_modules/admin-lte/dist/css/adminlte.min.css'); ?>">
-<!-- custom styles -->
-<link rel="stylesheet" href="<?= base_url('assets/css/backend/login_styles.css'); ?>">
-<!-- font -->
-<link rel="stylesheet" href="<?= base_url('assets/fonts/font-face.css'); ?>">
-<!-- /HEAD -->
+    <!-- MAIN HEAD -->
+    <?= view('_komponen/backend/_main_head'); ?>
 </head>
 <body class="hold-transition login-page">
     <div class="wrapper w-100">
@@ -83,12 +67,7 @@
         </div>
     </div>
 
-<!-- SCRIPT -->
-<script src="assets/vendor/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="assets/vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/node_modules/admin-lte/dist/js/adminlte.min.js"></script>
-<script src="assets/vendor/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="assets/vendor/node_modules/jquery-validation/dist/additional-methods.min.js"></script>
-<!-- /SCRIPT -->
+    <!-- MAIN SCRIPT -->
+    <?= view('_komponen/backend/_main_script'); ?>
 </body>
 </html>
