@@ -5,8 +5,11 @@ namespace App\Controllers;
 
 class Admin extends _backend{
     public function index(){
+        redirect('home', 'auto');
+        // header('location: ' . base_url('home')); // arahkan ke halaman survey index
+
         
-        return view('backend/login_v');
+        // return view('backend/login_v');
     }
 
     public function testHash(){
